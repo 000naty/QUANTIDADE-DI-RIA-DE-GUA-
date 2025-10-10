@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxograma de Nutrição - Quantidade de Água</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Quantidade Diária de Água</h1>
+        <form id="water-form">
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" required>
+
+            <label for="condicoes-climaticas">Condições Climáticas:</label>
+            <select id="condicoes-climaticas" required>
+                <option value="normal">Normal</option>
+                <option value="quente">Quente</option>
+            </select>
+
+            <label for="atividade">Nível de Atividade Física:</label>
+            <select id="atividade" required>
+                <option value="baixo">Baixo</option>
+                <option value="moderado">Moderado</option>
+                <option value="alto">Alto</option>
+            </select>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="resultado">
+            <h2>Resultado:</h2>
+            <p id="quantidade-agua">-</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
